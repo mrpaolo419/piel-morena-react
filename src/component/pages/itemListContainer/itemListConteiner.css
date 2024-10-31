@@ -1,0 +1,9 @@
+.pintarCard {
+  display: flex; /* Habilita flexbox */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si no hay suficiente espacio */
+  justify-content: center; /* Centra los items horizontalmente */
+  align-items: flex-start; /* Alinea los items en la parte superior */
+  gap: 30px; /* Espacio entre los cards */
+  padding: 20px;
+  margin-top: 50px; /* Espacio interno para el contenedor */
+}

@@ -1,0 +1,19 @@
+.navCont {
+  display: flex;
+  justify-content: space-between;
+  background-color: pink;
+  align-items: center;
+  height: 155px;
+  padding: 0 50px;
+}
+
+.logo {
+  color: pink;
+  height: 150px;
+  width: 150px;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
