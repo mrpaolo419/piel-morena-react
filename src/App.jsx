@@ -9,7 +9,7 @@ function App() {
     <div>
       <Navbar />
       <ItemListConteiner />
-      <ItemdetailContainer />
+      {/* <ItemdetailContainer /> */}
 
       <CounterConteiner />
     </div>
