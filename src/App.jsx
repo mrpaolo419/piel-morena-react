@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      {/* <ItemListConteiner /> */}
+      <ItemListConteiner />
       <ItemdetailContainer />
 
       <CounterConteiner />
