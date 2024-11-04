@@ -1,0 +1,53 @@
+/* contador.css */
+
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contador h1 {
+  margin: 0 20px; /* Espacio entre botones y contador */
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.contador button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff; /* Color azul para los botones */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 5px; /* Espacio entre los botones */
+}
+
+.contador button:hover {
+  background-color: hsla(
+    12,
+    84%,
+    30%,
+    0.401
+  ); /* Color más oscuro al pasar el cursor */
+}
+
+/* Estilos específicos para el botón "Agregar al Carrito" */
+.agregar-carrito {
+  background-color: #28a745; /* Verde para indicar acción positiva */
+}
+
+.agregar-carrito:hover {
+  background-color: #218838; /* Verde más oscuro al pasar el cursor */
+}
+
+.agregar-carrito:active {
+  transform: scale(0.95); /* Efecto de presión */
+}

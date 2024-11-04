@@ -1,7 +1,7 @@
 import Cart from "./Cart";
 
 const CartConteiner = () => {
-  return Cart;
+  return <Cart />;
 };
 
 export default CartConteiner;

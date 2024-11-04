@@ -1,18 +1,23 @@
-import Counter from "./component/common/counter/counter";
-import CounterConteiner from "./component/common/counter/CounterConteiner";
-import Navbar from "./component/layouts/Navbar/Navbar";
-import ItemdetailContainer from "./component/pages/itemDetail/ItemdetailContainer";
-import ItemListConteiner from "./component/pages/itemListContainer/itemListConteiner";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ItemListConteiner from "./component/pages/itemListContainer/ItemListConteiner";
+import Navbar from "./component/layouts/navbar/Navbar";
+import ItemDetailContainer from "./component/pages/itemDetail/ItemDetailContainer";
+import CartConteiner from "./component/pages/cart/CartConteiner";
+import Footer from "./component/layouts/footer/Footer";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <ItemListConteiner />
-      {/* <ItemdetailContainer /> */}
-
-      <CounterConteiner />
-    </div>
+      <Routes>
+        <Route path={"/"} element={<ItemListConteiner />} />
+        <Route path={"/category/:categoria"} element={<ItemListConteiner />} />
+        <Route path={"/cart"} element={<CartConteiner />} />
+        <Route path={"/productdetail/:id"} element={<ItemDetailContainer />} />
+        <Route path={"*"} element={<h2>error 404</h2>} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

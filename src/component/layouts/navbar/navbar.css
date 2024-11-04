@@ -1,19 +1,39 @@
 .navCont {
   display: flex;
   justify-content: space-between;
-  background-color: pink;
   align-items: center;
+  background-color: pink;
   height: 155px;
   padding: 0 50px;
 }
 
 .logo {
-  color: pink;
   height: 150px;
   width: 150px;
 }
 
-li {
-  display: inline-block;
-  padding: 10px;
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333; /* Cambia este color según lo desees */
+  font-weight: bold;
+  font-size: 1.2rem; /* Tamaño de fuente ajustado */
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #ff69b4; /* Color al pasar el mouse, puedes cambiarlo */
+}
+
+.categoria {
+  text-decoration: none;
 }

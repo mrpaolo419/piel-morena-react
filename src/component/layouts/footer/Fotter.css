@@ -1,0 +1,23 @@
+.footerCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footerLinks {
+  margin-top: 10px;
+}
+
+.footerLinks span {
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footerLinks span:hover {
+  color: #ff69b4;
+}

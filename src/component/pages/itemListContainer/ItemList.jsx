@@ -13,6 +13,7 @@ const ItemList = ({ items }) => {
             precio={item.precio}
             articulo={item.articulo}
             imagen={item.imagenUrl}
+            id={item.id}
           />
         );
       })}

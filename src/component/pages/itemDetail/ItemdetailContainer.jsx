@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { products } from "../../../productMock";
-import Itemdetail from "./Itemdetail"; // Asegúrate de que la ruta sea correcta
+import ItemDetail from "./ItemDetail";
+import { useParams } from "react-router-dom";
 
-const ItemdetailContainer = () => {
+const ItemDetailContainer = () => {
   const [item, setItem] = useState({});
-  const id = "1";
+  const { id } = useParams();
 
   useEffect(() => {
-    // Usa la variable `product` correctamente
-    const product = products.find((product) => product.id === id);
+    const product = products.find((product) => product.id === parseInt(id));
     if (product) {
       setItem(product);
     }
-  }, []);
+  }, [id]);
 
-  return <Itemdetail item={item} />; // Asegúrate de que el componente esté importado
+  return <ItemDetail item={item} />;
 };
 
-export default ItemdetailContainer;
+export default ItemDetailContainer;

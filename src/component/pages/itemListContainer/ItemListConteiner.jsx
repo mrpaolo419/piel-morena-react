@@ -2,15 +2,20 @@ import { useState, useEffect } from "react";
 import { products } from "../../../productMock";
 import ItemList from "./ItemList";
 import "./itemListConteiner.css";
+import { useParams } from "react-router-dom";
 
 const ItemListConteiner = () => {
   const [items, setItems] = useState([]);
+  const { categoria } = useParams();
 
   useEffect(() => {
+    const productsFiltrados = products.filter(
+      (product) => product.categoria === categoria
+    );
     const getProducts = new Promise((res, rej) => {
-      let isLogued = true; // Cambia esto a false para probar el catch
+      let isLogued = true;
       if (isLogued) {
-        res(products);
+        res(categoria ? productsFiltrados : products);
       } else {
         rej({ message: "algo salió mal" });
       }
@@ -23,7 +28,7 @@ const ItemListConteiner = () => {
       .catch((error) => {
         console.log("entro en el catch", error);
       });
-  }, []);
+  }, [categoria]);
 
   return <ItemList items={items} />;
 };
