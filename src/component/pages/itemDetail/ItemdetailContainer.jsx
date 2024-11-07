@@ -21,11 +21,8 @@ const ItemDetailContainer = () => {
         if (docSnap.exists()) {
           setItem({ ...docSnap.data(), id: docSnap.id });
         } else {
-          console.log("No such document!");
         }
-      } catch (error) {
-        console.log("Error fetching document: ", error);
-      }
+      } catch (error) {}
     };
 
     if (id) {
@@ -33,7 +30,7 @@ const ItemDetailContainer = () => {
     }
   }, [id]);
 
-  console.log("Item en ItemDetailContainer:", item);
+  "Item en ItemDetailContainer:", item;
 
   const onadd = (cantidad) => {
     const productoParaElCarrito = { ...item, cantidad };

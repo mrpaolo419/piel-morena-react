@@ -6,7 +6,19 @@ export const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const agregarAlCarrito = (product) => {
-    setCart((prevCart) => [...prevCart, product]);
+    setCart((prevCart) => {
+      const existingProduct = prevCart.find((item) => item.id === product.id);
+
+      if (existingProduct) {
+        return prevCart.map((item) =>
+          item.id === product.id
+            ? { ...item, cantidad: item.cantidad + 1 }
+            : item
+        );
+      } else {
+        return [...prevCart, { ...product, cantidad: 1 }];
+      }
+    });
   };
 
   const limpiarCart = () => {
