@@ -1,9 +1,22 @@
 import React from "react";
-import "./Cart.css";
-import ChecKout from "../checkout/ChecKout";
 import { Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./cart.css";
+import Swal from "sweetalert2";
 
 const Cart = ({ cart, eliminarProducto, limpiar, total }) => {
+  const handleCheckout = () => {
+    if (cart.length === 0) {
+      Swal.fire({
+        icon: "warning",
+        title: "¡Oops!",
+        text: "Agrega productos al carrito para poder comprar.",
+        confirmButtonColor: "#ff69b4",
+      });
+    }
+  };
+
   return (
     <div className="carritos">
       {cart.length === 0 ? (
@@ -11,8 +24,6 @@ const Cart = ({ cart, eliminarProducto, limpiar, total }) => {
       ) : (
         cart.map((product) => (
           <div key={product.id} className="cart-item">
-            {" "}
-            {/* Asegúrate de usar product.id aquí */}
             <img src={product.imagenUrl} alt={product.articulo} />
             <div className="product-info">
               <h2>{product.marca}</h2>
@@ -31,7 +42,7 @@ const Cart = ({ cart, eliminarProducto, limpiar, total }) => {
       )}
       <button onClick={limpiar}>Limpiar carrito</button>
       <Link to="/checKout">
-        <button onClick={ChecKout}>Finalizar Compra</button>
+        <button onClick={handleCheckout}>Finalizar Compra</button>
       </Link>
       <div>Total = $ {total}</div>
     </div>

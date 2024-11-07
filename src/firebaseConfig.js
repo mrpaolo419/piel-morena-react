@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBvu40cSJEXDGmFc4v9IuMTIQWg2Tsp2GE",
-  authDomain: "calzados-piel-morena.firebaseapp.com",
-  projectId: "calzados-piel-morena",
-  storageBucket: "calzados-piel-morena.firebasestorage.app",
-  messagingSenderId: "795574973229",
-  appId: "1:795574973229:web:b8877e78e8b1c6e13699a4",
-  measurementId: "G-SP2LVM49KZ",
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH,
+  projectId: import.meta.env.VITE_PROJECT,
+  storageBucket: import.meta.env.VITE_ESTORAJE,
+  messagingSenderId: import.meta.env.VITE_MESSAGIN,
+  appId: import.meta.env.VITE_APP,
+  measurementId: import.meta.env.VITE_MEASU,
 };
 
 // Initialize Firebase

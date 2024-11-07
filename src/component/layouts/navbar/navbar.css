@@ -3,14 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333; /* Mantén el color oscuro o el que prefieras */
+  background-color: pink; /* Mantén el color oscuro o el que prefieras */
   padding: 15px 30px;
   box-sizing: border-box;
 }
 
 /* Logo */
 .logo {
-  height: 50px;
+  height: 150px;
   cursor: pointer;
 }
 
