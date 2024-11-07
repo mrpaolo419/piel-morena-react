@@ -13,10 +13,13 @@ export const Navbar = () => {
         />
       </Link>
 
-      <ul>
+      <ul className="categoria">
         <Link to="/category/hombre">HOMBRE</Link>
+
         <Link to="/category/mujer">MUJER</Link>
+
         <Link to="/category/niño">NIÑO</Link>
+
         <Link to="/category/oferta">OFERTA</Link>
       </ul>
       <Link to="/cart">

@@ -1,0 +1,41 @@
+.cart-item {
+  display: flex;
+  /* Usar flexbox para alinear los elementos */
+  justify-content: center;
+  align-items: center; /* Centrar verticalmente los elementos */
+  margin: 10px 0; /* Espaciado vertical entre items */
+  padding: 10px; /* Espaciado interno para dar espacio alrededor del contenido */
+  border: 1px solid #ddd; /* Borde alrededor de cada item */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Color de fondo de cada item */
+}
+
+.cart-item img {
+  width: 80px; /* Ajustar el tamaño de la imagen */
+  height: auto; /* Mantener la proporción de la imagen */
+  margin-right: 15px; /* Espaciado a la derecha de la imagen */
+}
+
+.product-info {
+  flex: 1; /* Permitir que la sección de información del producto use el espacio disponible */
+}
+
+.remove-button {
+  margin-left: 20px; /* Espacio a la izquierda del botón */
+  background-color: #ff4d4d; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.remove-button:hover {
+  background-color: #ff1a1a; /* Color al pasar el mouse */
+}
+
+.empty-cart {
+  text-align: center; /* Centrar el texto en el mensaje de carrito vacío */
+  margin-top: 20px; /* Espacio arriba del mensaje */
+}

@@ -1,17 +1,5 @@
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Typography,
-} from "@mui/material";
-import { Link } from "react-router-dom";
-
 const Productorcard = ({ marca, precio, articulo, imagen, id }) => {
-  // Agrega un log para verificar que el id esté definido
-  console.log("ID en Productorcard:", id);
-
+  console.log("ID recibido en Productorcard:", id); // Verifica si el id es correcto
   return (
     <Card sx={{ width: 300, height: 350 }}>
       <CardMedia sx={{ height: 200 }} image={imagen} title={articulo} />
@@ -34,5 +22,3 @@ const Productorcard = ({ marca, precio, articulo, imagen, id }) => {
     </Card>
   );
 };
-
-export default Productorcard;

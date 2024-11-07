@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import Counter from "./counter";
+import Counter from "./Counter";
 
-const CounterConteiner = () => {
-  const [contador, setContador] = useState(0);
+const CounterConteiner = ({ onadd, stock }) => {
+  const [contador, setContador] = useState(1);
 
   const sumar = () => {
-    setContador(contador + 1);
+    if (contador < stock) {
+      setContador(contador + 1);
+    }
   };
 
   const restar = () => {
@@ -18,6 +20,7 @@ const CounterConteiner = () => {
     contador: contador,
     sumar: sumar,
     restar: restar,
+    onadd: onadd,
   };
 
   return <Counter {...childProps} />;
