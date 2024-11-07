@@ -3,6 +3,7 @@ import CounterConteiner from "../../common/counter/CounterConteiner";
 import "./itemDetail.css";
 
 const ItemDetail = ({ item, onadd }) => {
+  console.log("Item recibido en ItemDetail:", item); // Verifica qué datos están llegando
   return (
     <div className="item-detail">
       <h1>{item.marca}</h1>

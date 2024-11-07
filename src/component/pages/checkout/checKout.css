@@ -1,0 +1,108 @@
+/* checKout.css */
+
+/* Estilo para el contenedor principal (checkout-form) */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px; /* Ancho máximo del formulario */
+  width: 100%;
+  margin: 20px auto; /* Centrado horizontal y un poco de margen superior */
+  box-sizing: border-box;
+  min-height: 100vh; /* Altura mínima para asegurarse de que ocupe todo el alto de la pantalla si es necesario */
+}
+
+/* Estilo para el título cuando se muestra el número de orden */
+.checkout-form h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilo cuando el formulario está procesando (con CircularProgress) */
+.checkout-form > div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.MuiCircularProgress-root {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.checkout-form p {
+  font-size: 16px;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+/* Estilo para el formulario */
+.checkout-form form {
+  width: 100%; /* Asegurarse de que el formulario ocupe todo el ancho del contenedor */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para los inputs dentro del formulario */
+.checkout-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Estilo cuando un input tiene el foco */
+.checkout-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Estilo para el botón de envío */
+.checkout-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+/* Estilo cuando el botón de envío es presionado */
+.checkout-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .checkout-form {
+    padding: 20px; /* Menos padding para pantallas pequeñas */
+    max-width: 100%;
+  }
+
+  .checkout-form input {
+    padding: 10px; /* Reducir padding para inputs */
+    font-size: 14px; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+  }
+
+  .checkout-form button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

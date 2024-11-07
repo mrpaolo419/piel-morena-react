@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-import { products } from "../../productMock"; // Asegúrate de tener este archivo
 
 export const CartContext = createContext();
 

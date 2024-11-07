@@ -1,39 +1,48 @@
+/* Estilo general del contenedor del Navbar */
 .navCont {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: pink;
-  height: 155px;
-  padding: 0 50px;
+  background-color: #333; /* Mantén el color oscuro o el que prefieras */
+  padding: 15px 30px;
+  box-sizing: border-box;
 }
 
+/* Logo */
 .logo {
-  height: 150px;
-  width: 150px;
+  height: 50px;
+  cursor: pointer;
 }
 
-ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 0 15px;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #333; /* Cambia este color según lo desees */
-  font-weight: bold;
-  font-size: 1.2rem; /* Tamaño de fuente ajustado */
-  transition: color 0.3s;
-}
-
-ul li a:hover {
-  color: #ff69b4; /* Color al pasar el mouse, puedes cambiarlo */
-}
-
+/* Estilos de las categorías */
 .categoria {
-  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Espaciado entre las categorías */
+  margin: 0;
+}
+
+.categoria li {
+  margin: 0;
+}
+
+/* Estilo de los links sin decoración */
+.categoria a {
+  color: white;
+  text-decoration: none; /* Quita el subrayado */
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Para suavizar el cambio de color al pasar el ratón */
+}
+
+/* Efecto hover */
+.categoria a:hover {
+  color: #007bff; /* Color que cambia al pasar el ratón */
+}
+
+/* Estilo del carrito */
+.cartWidget {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
 }

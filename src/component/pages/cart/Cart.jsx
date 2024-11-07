@@ -1,9 +1,11 @@
 import React from "react";
 import "./Cart.css";
+import ChecKout from "../checkout/ChecKout";
+import { Link } from "react-router-dom";
 
 const Cart = ({ cart, eliminarProducto, limpiar, total }) => {
   return (
-    <div>
+    <div className="carritos">
       {cart.length === 0 ? (
         <h2 className="empty-cart">El carrito está vacío</h2>
       ) : (
@@ -28,6 +30,9 @@ const Cart = ({ cart, eliminarProducto, limpiar, total }) => {
         ))
       )}
       <button onClick={limpiar}>Limpiar carrito</button>
+      <Link to="/checKout">
+        <button onClick={ChecKout}>Finalizar Compra</button>
+      </Link>
       <div>Total = $ {total}</div>
     </div>
   );

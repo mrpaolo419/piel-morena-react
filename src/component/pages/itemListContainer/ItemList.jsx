@@ -1,4 +1,5 @@
-import Productorcard from "../../common/Producard/Productorcard";
+import Productorcard from "../../common/Producard/Productorcard"; // Asegúrate de que sea la ruta correcta
+
 import "./itemListConteiner.css";
 
 const ItemList = ({ items }) => {
@@ -13,6 +14,7 @@ const ItemList = ({ items }) => {
             precio={item.precio}
             articulo={item.articulo}
             imagen={item.imagenUrl}
+            id={item.id}
           />
         );
       })}
