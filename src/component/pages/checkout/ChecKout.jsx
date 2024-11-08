@@ -1,7 +1,7 @@
 import { Button, Input, CircularProgress } from "@mui/material";
 import { useContext, useState } from "react";
 import { db } from "../../../firebaseConfig";
-import { CartContext } from "../../contextCart/CartContext";
+import { CartContext } from "../../context/CartContext";
 import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
 import "./checKout.css";
 
