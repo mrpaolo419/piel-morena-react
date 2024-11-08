@@ -1,6 +1,6 @@
 import Productorcard from "../../common/Producard/Productorcard"; // Asegúrate de que sea la ruta correcta
 
-import "./itemListConteiner.css";
+import "./itemList.css";
 
 const ItemList = ({ items }) => {
   return (
