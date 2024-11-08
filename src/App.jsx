@@ -8,7 +8,8 @@ import Footer from "./component/layouts/footer/Footer";
 import ChecKout from "./component/pages/checkout/ChecKout";
 
 import ItemDetailContainer from "./component/pages/itemDetailContainer/ItemDetailContainer";
-import { CartContextProvider } from "./component/context/cartContext";
+
+import { CartContextProvider } from "./component/context/CartContext";
 
 function App() {
   return (
