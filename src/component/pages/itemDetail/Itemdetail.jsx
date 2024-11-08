@@ -1,7 +1,7 @@
 import React from "react";
-import CounterConteiner from "../../common/counter/CounterConteiner";
-import "./itemDetail.css";
 
+import "./itemDetail.css";
+import CounterConteiner from "../../common/counter/CounterConteiner";
 const ItemDetail = ({ item, onadd }) => {
   return (
     <div className="item-detail">
