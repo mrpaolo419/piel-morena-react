@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { CartContext } from "../../contextCart/cartContext";
+import { CartContext } from "../../contextCart/CartContext";
 import { collection, doc, getDoc } from "firebase/firestore";
 import { useState } from "react";
 import { useEffect } from "react";

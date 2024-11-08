@@ -9,8 +9,6 @@ import ChecKout from "./component/pages/checkout/ChecKout";
 
 import ItemDetailContainer from "./component/pages/itemDetailContainer/ItemDetailContainer";
 
-import { CartContextProvider } from "./component/contextCart/CartContext";
-
 function App() {
   return (
     <BrowserRouter>
