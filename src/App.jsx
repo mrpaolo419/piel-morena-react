@@ -7,7 +7,7 @@ import Footer from "./component/layouts/footer/Footer";
 import { CartContextProvider } from "./component/context/cartContext";
 import ChecKout from "./component/pages/checkout/ChecKout";
 
-import ItemDetailContainer from "./component/pages/itemDetail/ItemDetailContainer";
+import ItemDetailContainer from "./component/pages/itemDetailContainer/ItemDetailContainer";
 
 function App() {
   return (
