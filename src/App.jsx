@@ -4,8 +4,9 @@ import Navbar from "./component/layouts/navbar/Navbar";
 
 import CartConteiner from "./component/pages/cart/CartConteiner";
 import Footer from "./component/layouts/footer/Footer";
-import { CartContextProvider } from "./component/context/cartContext";
+
 import ChecKout from "./component/pages/checkout/ChecKout";
+import { CartContextProvider } from "./component/context/cartContext"; // Verifica si necesitas agregar la extensión.
 
 import ItemDetailContainer from "./component/pages/itemDetailContainer/ItemDetailContainer";
 
