@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { useContext } from "react";
 
 import { db } from "../../../firebaseConfig";
-import ItemDetail from "/ItemDetail";
+import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState({});
