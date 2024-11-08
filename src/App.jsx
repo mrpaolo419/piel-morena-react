@@ -6,12 +6,9 @@ import CartConteiner from "./component/pages/cart/CartConteiner";
 import Footer from "./component/layouts/footer/Footer";
 
 import ChecKout from "./component/pages/checkout/ChecKout";
-import {
-  CartContext,
-  CartContextProvider,
-} from "./component/context/cartContext"; // Verifica si necesitas agregar la extensión.
 
 import ItemDetailContainer from "./component/pages/itemDetailContainer/ItemDetailContainer";
+import { CartContextProvider } from "./component/context/cartContext";
 
 function App() {
   return (
