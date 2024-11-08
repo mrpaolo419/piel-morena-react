@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { products } from "../../../productMock";
 import ItemList from "./ItemList";
-import "./itemListConteiner.css";
+import "./itemList.css";
 import { useParams } from "react-router-dom";
 import { db } from "../../../firebaseConfig";
 import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
